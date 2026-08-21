@@ -12,7 +12,7 @@
     "dev:ssl": "cd engines/ssl-checker && python app.py",
     "dev:email": "cd engines/email-reader && python app.py",
     "dev:pass": "cd engines/password-analyzer && python app.py",
-    "dev": "concurrently -c \"cyan,red,green,yellow,blue,magenta,white,gray,cyan.bold\" -n \"UI,HASH,URL,IP,PORT,FILE,SSL,MAIL,PASS\" \"npm run dev:ui\" \"npm run dev:hash\" \"npm run dev:url\" \"npm run dev:ip\" \"npm run dev:port\" \"npm run dev:file\" \"npm run dev:ssl\" \"npm run dev:email\" \"npm run dev:pass\"",
+    "dev": "set \"PATH=%PATH%;C:\\Windows\\System32\" && concurrently -c \"cyan,red,green,yellow,blue,magenta,white,gray,cyan.bold\" -n \"UI,HASH,URL,IP,PORT,FILE,SSL,MAIL,PASS\" \"npm run dev:ui\" \"npm run dev:hash\" \"npm run dev:url\" \"npm run dev:ip\" \"npm run dev:port\" \"npm run dev:file\" \"npm run dev:ssl\" \"npm run dev:email\" \"npm run dev:pass\"",
     "build": "next build",
     "start": "next start",
     "lint": "next lint"
